@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="295.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecenur.hastanesistemi.controller.RandevuController">
+   <children>
+      <TextField fx:id="textAd" layoutX="41.0" layoutY="40.0" prefHeight="44.0" prefWidth="258.0" promptText="Adınızı Giriniz" />
+      <ComboBox fx:id="comboBolum" layoutX="41.0" layoutY="107.0" prefWidth="150.0" promptText="Bölüm" />
+      <ComboBox fx:id="comboDoktorlar" layoutX="218.0" layoutY="107.0" prefHeight="26.0" prefWidth="150.0" promptText="Doktor" />
+      <ComboBox fx:id="comboSaat" layoutX="399.0" layoutY="107.0" prefHeight="26.0" prefWidth="150.0" promptText="Saat" />
+      <Button fx:id="btnRandevuOlustur" layoutX="335.0" layoutY="40.0" mnemonicParsing="false" onAction="#randevuOlustur" prefHeight="44.0" prefWidth="150.0" text="Randevu Oluştur">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="41.0" layoutY="242.0" mnemonicParsing="false" onAction="#geriGit" prefHeight="26.0" prefWidth="62.0" text="geri" />
+      <Label fx:id="lblMesaj" layoutX="220.0" layoutY="195.0" prefHeight="60.0" prefWidth="158.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
